@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    android:padding="40dp" android:weightSum="2"
+    android:paddingHorizontal="50dp"
+    >
+
+    <RelativeLayout
+        android:background="#ccc7c7"
+        android:layout_centerInParent="true"
+        android:layout_width="800dp"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginTop="15dp"
+
+        >
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25dp"
+
+            >
+            <EditText
+                android:id="@+id/nomMutuelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@mipmap/account"
+                android:drawablePadding="5dp"
+
+                android:hint="Nom du mutuelle"
+                android:inputType="text"
+                android:paddingStart="0dp"
+
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                />
+
+            <EditText
+                android:id="@+id/telephoneMutuelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@mipmap/account"
+                android:drawablePadding="5dp"
+
+                android:hint="N° Telephone du mutuelle"
+                android:inputType="text"
+                android:paddingStart="0dp"
+
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/adresseMutuelle"
+                android:drawableStart="@drawable/ic_phone_iphone_black_24dp"
+                android:hint="Adresse du mutuelle."
+                android:layout_marginTop="10dp"
+                android:paddingEnd="0dp"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                />
+
+            <EditText
+                android:id="@+id/emailMutuelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="5dp"
+
+                android:hint="Email du mutuelle"
+                android:inputType="text"
+                android:paddingStart="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

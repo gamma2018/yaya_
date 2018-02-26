@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sad.tpharma">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"> </activity>
+        <activity android:name=".VenteActivity" />
+        <activity
+                android:label="Historique"
+            android:name=".Historique"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Commande"
+            android:name=".CommandeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Nouvelle Commande"
+            android:name=".commande.NouvelleCommandeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Historique Commande"
+            android:name=".commande.HistoriqueCommandeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Facture"
+            android:name=".FactureActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Note de frais"
+            android:name=".facture.NoteFraisActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Facture Client"
+            android:name=".facture.FactureClientActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Facture Fournisseur"
+            android:name=".facture.FactureFournisseurActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Inventaire"
+            android:name=".InventaireActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Retour Produit"
+            android:name=".RetourProduitActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Note frais"
+            android:name=".NoteFraisActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Client"
+            android:name=".ClientActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UserActivity"
+            android:label="Utilisateur"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".GrossisteActivity" android:windowSoftInputMode="stateHidden" />
+        <activity
+                android:label="Reimpression de ticket"
+            android:name=".ReimpressionTicketActivity"
+            android:windowSoftInputMode="stateHidden"> </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ChangePasswordActivity" android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <activity android:name=".MutuelleActivity" android:windowSoftInputMode="stateHidden">
+        </activity>
+    </application>
+
+</manifest>
